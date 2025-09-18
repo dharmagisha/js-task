@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<style>
-
-    .main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-       
-
-    }
-
-    #click{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        
-    }
-    .box{
-        height: 400px;
-        width: 500px;
-        padding: 20px;
-        background-color: rgb(150, 95, 202);
-        color: white;
-        border: 2px solid black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 50;
-        position: relative;
-    }
-
-    .close{
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        
-    }
-</style>
 <body>
 
-    <div class="main">
-       <h1> Task Modal</h1>
+    <div class="modal_content">
+        <button id="openmodal">Modal Button</button>
 
-       <button onclick="modal()">Model</button>
+          <h3 id="tab">click for New Tab</h3>
 
-       <div id="click">
+        <div id="tabcontent" class="tab_content">
+             <h2>TAB CONTENT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam neque eum nisi aspernatur
+            provident vitae perspiciatis labore iusto ab dignissimos earum, debitis recusandae. Corrupti, corporis
+            inventore! Qui praesentium commodi quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
 
-        <div class="box">
-            <h1>Modal</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum qui architecto! Dicta odit accusamus similique, assumenda laborum eius illo in laboriosam corporis saepe? Minima illo mollitia praesentium consequatur sapiente.</p>
-                <button class="close" onclick="closemodal()">X</button>
         </div>
-       </div>
-     
+        <p class="out_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam neque eum nisi aspernatur
+            provident vitae perspiciatis labore iusto ab dignissimos earum, debitis recusandae. Corrupti, corporis
+            inventore! Qui praesentium commodi quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perferendis eaque voluptatem deleniti aut quidem! Tempora explicabo, est, animi delectus quos aliquid ipsum
+            ab vel, alias minus error. Quae, ipsa inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis placeat distinctio impedit tempore dolore, amet consectetur dicta delectus aliquam voluptas
+            nesciunt et quam cupiditate cum reiciendis sit totam sint autem! Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Beatae quas laboriosam ad reprehenderit similique, pariatur, ea voluptates natus iusto
+            sequi, esse nam dolorum aperiam reiciendis labore totam sit sunt optio. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Excepturi quaerat est ea quod cupiditate magni ad adipisci quia consequuntur
+            dolore. Repudiandae provident animi minus quisquam quaerat harum natus, adipisci magnam! Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Cupiditate vitae, beatae voluptatibus laborum quibusdam odio minima
+            repellat? Mollitia asperiores tempora obcaecati in, unde et quam placeat nesciunt minus quaerat voluptas!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam neque eum nisi aspernatur provident vitae
+            perspiciatis labore iusto ab dignissimos earum, debitis recusandae. Corrupti, corporis inventore! Qui
+            praesentium commodi quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eaque
+            voluptatem deleniti aut quidem! Tempora explicabo, est, animi delectus quos aliquid ipsum ab vel, alias
+            minus error. Quae, ipsa inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            placeat distinctio impedit tempore dolore, amet consectetur dicta delectus aliquam voluptas nesciunt et quam
+            cupiditate cum reiciendis sit totam sint autem! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae quas laboriosam ad reprehenderit similique, pariatur, ea voluptates natus iusto sequi, esse nam
+            dolorum aperiam reiciendis labore totam sit sunt optio. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Excepturi quaerat est ea quod cupiditate magni ad adipisci quia consequuntur dolore. Repudiandae
+            provident animi minus quisquam quaerat harum natus, adipisci magnam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cupiditate vitae, beatae voluptatibus laborum quibusdam odio minima repellat? Mollitia
+            asperiores tempora obcaecati in, unde et quam placeat nesciunt minus quaerat voluptas! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Ullam neque eum nisi aspernatur provident vitae perspiciatis labore iusto
+            ab dignissimos earum, debitis recusandae. Corrupti, corporis inventore! Qui praesentium commodi quidem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eaque voluptatem deleniti aut quidem!
+            Tempora explicabo, est, animi delectus quos aliquid ipsum ab vel, alias minus error. Quae, ipsa inventore.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat distinctio impedit tempore
+            dolore, amet consectetur dicta delectus aliquam voluptas nesciunt et quam cupiditate cum reiciendis sit
+            totam sint autem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quas laboriosam ad
+            reprehenderit similique, pariatur, ea voluptates natus iusto sequi, esse nam dolorum aperiam reiciendis
+            labore totam sit sunt optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat est
+            ea quod cupiditate magni ad adipisci quia consequuntur dolore. Repudiandae provident animi minus quisquam
+            quaerat harum natus, adipisci magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            vitae, beatae voluptatibus laborum quibusdam odio minima repellat? Mollitia asperiores tempora obcaecati in,
+            unde et quam placeat nesciunt minus quaerat voluptas!</p>
+
+
+      
+    </div>
+    <div id="mymodal" class="modal">
+        <div class="content">
+            <i class="fa-solid fa-xmark close" id="closemodal"></i>
+            <h1>Helloo</h1>
+            <p>This is a modal </p>
+        </div>
     </div>
 
 
 
     <script>
-        function modal(){
-             document.getElementById("click").style.display="flex"
-        }
+        const modal = document.getElementById("mymodal")
+        const closemodal = document.getElementById("closemodal")
+        const openmodal = document.getElementById("openmodal")
 
-        function closemodal(){
-             document.getElementById("click").style.display="none"
 
-        }
+        openmodal.addEventListener("click", () => {
+            modal.style.display = "flex";
+        });
 
-        
+        closemodal.addEventListener("click", () => {
+            modal.style.display = "none"
+        })
+
+
+        const tab = document.getElementById("tab")
+        const contenttab = document.getElementById("tabcontent")
+
+        tab.addEventListener("click", () => {
+
+            if(contenttab.style.display === "none" || contenttab.style.display === "") {
+            contenttab.style.display = "block"; 
+            tab.textContent = "Close Tab";   
+            } 
+            else {
+            contenttab.style.display = "none";  
+            tab.textContent = "Open Tab";    
+            }
+          })
+
     </script>
-    
 </body>
+
 </html>
