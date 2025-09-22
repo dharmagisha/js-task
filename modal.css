@@ -49,3 +49,7 @@
 .tab_content{
     display: none;
 }
+
+.cur{
+    cursor: pointer;
+}

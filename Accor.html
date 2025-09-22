@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Accordion</title>
+  <link rel="stylesheet" href="./accor.css">
+  
+</head>
+<body>
+
+  <h2 style="text-align: center;">Accordion Example</h2>
+    <div class="toggle">
+        <div> <button onclick="toggle(1)">Section 1</button>
+     <div id="content1" class="con" style="display: none;">section 1 content</div>
+    </div>
+
+    <div> <button onclick="toggle(2)">Section 2</button>
+     <div id="content2" class="con" style="display: none;">section 2 content</div>
+    </div>
+
+     <div>
+        <button onclick="toggle(3)">Section 3</button>
+     <div id="content3" class="con" style="display: none;">section 3 content</div>
+     </div>
+
+    </div>
+  <script>
+
+    function toggle(num) {
+        let con = document.getElementById("content" + num)
+
+        if(con.style.display === "none") {
+            con.style.display = "block";
+        }
+        else {
+            con.style.display = "none"
+        }
+    }
+
+
+
+    
+  </script>
+</body>
+</html>

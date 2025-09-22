@@ -1,0 +1,29 @@
+
+.toggle {
+  width: 300px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  display: flex;
+    flex-direction: column;
+}
+
+.toggle button {
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle button:hover {
+  background-color: #e7e0e0;
+}
+
+.con{
+    padding: 20px;
+}
+
